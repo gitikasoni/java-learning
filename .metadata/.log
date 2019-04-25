@@ -101,3 +101,8 @@ Java Model Exception: Java Model Status [Unknown javadoc format for System [in S
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-04-24 23:29:43.301
 !MESSAGE Unknown javadoc format for System [in System.class [in java.lang [in C:\Program Files\Java\jre1.8.0_191\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jdt.core 4 4 2019-04-25 20:40:59.592
+!MESSAGE Background Indexer Crash Recovery
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException
