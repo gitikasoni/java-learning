@@ -1,0 +1,13 @@
+package com.examples.java;
+
+public class StringArrayExample {
+	
+	public static void main(String args[])
+	{
+		String name[]= new String[5];
+		System.out.println(name);
+		
+		
+	}
+
+}

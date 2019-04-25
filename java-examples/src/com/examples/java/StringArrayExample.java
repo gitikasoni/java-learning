@@ -1,0 +1,28 @@
+package com.examples.java;
+
+public class StringArrayExample {
+
+	public static void main(String args[]) {
+		String names[] = new String[5];
+		System.out.println(names);
+		for (int i = 0; i < names.length; i++) {
+			System.out.println(names[i]);
+
+		}
+		String city = "";
+
+		System.out.println("Assigning values to string");
+		names[0] = "Manish";
+		names[1] = "Anisha";
+		names[2] = "Anshul";
+		names[3] = "Manisha";
+		names[4] = "Lokesh";
+		for (int i = 0; i < names.length; i++) {
+			if (names[i].contains("`an")) {
+				System.out.println(names[i]);
+			}
+		}
+
+	}
+
+}
