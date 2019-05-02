@@ -1,0 +1,26 @@
+package com.examples.java;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetByGenericsExample {
+	
+	public static void main(String args[]) {
+		
+		Set<String> set = new HashSet<String>();
+		set.add("Manish");
+		set.add("Gitika");
+		set.add("Manish");
+		set.add("Gitika");
+		set.add("Raghav");
+		set.add("Soumitra");
+		set.add("Sachin");
+		System.out.println("Printing Set :"+set);
+		
+		System.out.println("Printing Set size:"+set.size());
+
+		
+		
+	}
+
+}

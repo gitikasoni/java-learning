@@ -1,0 +1,9 @@
+package com.examples.java;
+
+public class SetByGenericsExample {
+	
+	public static void main(String args[]) {
+		
+	}
+
+}

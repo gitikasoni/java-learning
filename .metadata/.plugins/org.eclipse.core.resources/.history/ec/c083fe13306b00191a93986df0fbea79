@@ -1,0 +1,14 @@
+package com.examples.collection;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class TreeMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map treeMap = new TreeMap();
+		
+	}
+
+}

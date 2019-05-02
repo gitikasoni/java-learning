@@ -1,0 +1,38 @@
+package com.example.smoketest;
+
+import junit.framework.Assert;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+public class PageTitleJUnit {
+
+	WebDriver driver;
+	String webURL = "http://www.sdettraining.com/trguitransactions/AccountManagement.aspx";
+
+	@Test
+	public void pageTitleTest()
+	{
+		System.out.println("Running the test");
+		driver.get(webURL);
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "SDET Training | Account Management";
+		Assert.assertEquals(expectedTitle, actualTitle);
+				
+	}
+	
+	@Before
+	public void setup()
+	{
+		System.out.println("Initializing the driver");
+		
+	}
+	
+	@After
+	public void tearDown()
+	{
+		System.out.println("Closing the driver");
+	}
+}

@@ -1,0 +1,52 @@
+package com.example.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class FirefoxExample2 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		// System Property for Gecko Driver
+		System.setProperty("webdriver.gecko.driver",
+				"D:\\Testing Material\\geckodriver-v0.23.0-win64\\geckodriver.exe");
+
+		// Initialize Gecko Driver using Desired Capabilities Class
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("marionette", true);
+		WebDriver driver = new FirefoxDriver(capabilities);
+
+		// Launch Website
+		driver.navigate().to(
+				"https://www.testandquiz.com/selenium/testing.html");
+
+		//Thread.sleep(5000);
+		// Click on the Link Text using click() command
+		System.out.println("isDisplayed :"+driver.findElement(By.linkText("This is a Link")).isDisplayed());
+		System.out.println("isEnabled   :"+driver.findElement(By.linkText("This is a Link")).isEnabled());
+		System.out.println("isSelected  :"+driver.findElement(By.linkText("This is a Link")).isSelected());
+
+		
+		
+		/*		driver.findElement(By.linkText("This is a Link")).click();
+
+		// Go back to Home Page
+		driver.navigate().back();
+
+		// Go forward to Registration page
+		driver.navigate().forward();
+
+		// Go back to Home page
+		driver.navigate().to(
+				"https://www.testandquiz.com/selenium/testing.html");
+
+		// Refresh browser
+		driver.navigate().refresh();
+
+		// Closing browser
+*/		driver.close();
+	}
+
+}

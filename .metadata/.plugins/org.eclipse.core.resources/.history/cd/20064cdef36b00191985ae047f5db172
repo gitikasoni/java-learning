@@ -1,0 +1,13 @@
+package stepImplementations;
+
+import cucumber.api.java.en.Given;
+
+public class BDDLoginTest {
+
+	
+	@Given("^The user is on the login page$")
+	public void user_is_on_the_login_page()
+	{
+		System.out.println("user is on the login page");
+	}
+}

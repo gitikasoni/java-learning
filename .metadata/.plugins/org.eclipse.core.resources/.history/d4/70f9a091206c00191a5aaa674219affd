@@ -1,0 +1,36 @@
+package com.examples.java;
+
+public class JavaExceptionExample {
+
+	public void testMethod()
+	{
+		System.out.println("Inside the test method");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Program starts");
+		
+		int data = 100/0;
+		
+		System.out.println("Exception example 111");
+	
+		
+		try{
+			
+			//int data = 100/0;
+			JavaExceptionExample obj = new JavaExceptionExample();
+			obj.testMethod();
+			
+			System.out.println("Exception example");
+			
+		} catch(ArithmeticException e)
+		{
+			System.out.println("Inside catch " +e);
+		}
+		
+		System.out.println("After try catch ");
+	}
+
+}

@@ -1,0 +1,26 @@
+package tests;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+import pages.LoginPage;
+import utilities.DriverFactory;
+
+public class Login {
+	
+	@Test
+	public void loginTestPOM()
+	{
+		
+	WebDriver driver = DriverFactory.open("firefox");
+	driver.get("http://www.sdettraining.com/trguitransactions/AccountManagement.aspx");
+
+	LoginPage var = new LoginPage(driver);
+	var.setUsername("tim@testemail.com");
+	var.setPassword("trpass");
+	var.submit();
+	
+	
+	//driver.quit();
+	}
+}

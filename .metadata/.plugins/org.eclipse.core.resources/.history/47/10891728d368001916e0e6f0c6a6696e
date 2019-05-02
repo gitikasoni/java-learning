@@ -1,0 +1,27 @@
+package com.example.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.SendKeysAction;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class FirefoxExample {
+
+	public static void main(String[] args) {
+	System.setProperty("webdriver.gecko.driver", "D:\\Testing Material\\seleniumfiles\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+	DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+	capabilities.setCapability("marionette", true);
+	WebDriver driver = new FirefoxDriver();
+	
+	
+	driver.navigate().to("http://www.javatpoint.com/");
+
+	
+	driver.findElement(By.id("gsc-i-id1")).sendKeys("Java");
+		driver.findElement(
+				By.className("gsc-search-button gsc-search-button-v2")).click();
+
+	}
+
+}

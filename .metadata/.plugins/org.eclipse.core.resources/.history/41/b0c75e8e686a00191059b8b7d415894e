@@ -1,0 +1,32 @@
+package tests;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+public class Expedia {
+
+	WebDriver driver;
+	
+	
+	@Test
+	public void hotelReservation() {
+	
+}
+	 
+	@Before
+	public void setup()
+	{
+		driver = utilities.DriverFactory.open("firefox");
+		driver.get("https://www.expedia.com/");
+	}
+	
+@After
+
+	public void tearDown()
+	{
+		driver.quit();
+	}
+	
+}

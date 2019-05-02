@@ -1,0 +1,40 @@
+package tests;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import junit.framework.Assert;
+
+public class Expedia {
+
+	WebDriver driver;
+	WebElement originElement;
+	
+	
+	@Test
+	public void hotelReservation() {
+		
+		driver.findElement(By.id("tab-hotel-tab-hp")).click();
+		driver.findElement(By.id("hotel-destination-hp-hotel")).sendKeys("Chicago, IL");
+	
+}
+	 
+	@Before
+	public void setup()
+	{
+		driver = utilities.DriverFactory.open("firefox");
+		driver.get("https://www.expedia.com/");
+	}
+	
+@After
+
+	public void tearDown()
+	{
+		driver.quit();
+	}
+	
+}

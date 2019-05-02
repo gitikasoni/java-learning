@@ -1,0 +1,23 @@
+package com.examples.collection;
+
+import java.util.TreeSet;
+
+public class TreeSetExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//unique+ asc/desc
+		
+		TreeSet<String> tree = new TreeSet<String>();
+		
+		tree.add("value1");
+		tree.add("value2");
+		System.out.print("LinkedHashSet example-- " +tree);
+
+		for(String str1: set2)
+		{
+			System.out.println("HashSet example using for each" + str1);
+		}
+	}
+
+}

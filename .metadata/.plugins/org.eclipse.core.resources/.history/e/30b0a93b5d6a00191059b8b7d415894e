@@ -1,0 +1,25 @@
+package tests;
+
+
+import java.util.List;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+
+
+@RunWith(value = Parameterized.class)
+
+public class NewAccountDDT {
+	
+	String name;
+	String email;
+	String phone;
+	
+	@Parameters
+	public static List <String[]> getData()
+	{
+		return utilities.CSV.get("D:\\Testing Material\\TestCSV.csv");
+	}
+}

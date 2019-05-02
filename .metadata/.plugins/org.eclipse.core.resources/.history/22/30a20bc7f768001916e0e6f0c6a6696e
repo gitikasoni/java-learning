@@ -1,0 +1,27 @@
+package utilities;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class DriverFactory {
+	public static WebDriver open(String browserType)
+	{
+	if (browserType.equalsIgnoreCase("firefox")) {
+
+		System.setProperty(
+				"webdriver.gecko.driver",
+				"D:\\Testing Material\\seleniumfiles\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+	 return new FirefoxDriver();		
+	}
+	else
+	{
+		System.setProperty(
+				"webdriver.gecko.driver",
+				"D:\\Testing Material\\seleniumfiles\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+	return new ChromeDriver();
+	}
+	}
+	
+
+}

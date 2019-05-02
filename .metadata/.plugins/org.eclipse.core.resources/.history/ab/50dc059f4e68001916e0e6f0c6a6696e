@@ -1,0 +1,17 @@
+package com.examples.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListGenericsExample {
+
+	public static void main(String args[])
+	{
+		List<String> list = new ArrayList<String>();
+		list.add("sjeki");
+		list.add("uayhew");
+		
+		list.add(34.2);
+		
+	}
+}

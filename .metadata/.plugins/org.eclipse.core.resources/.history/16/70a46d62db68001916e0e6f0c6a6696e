@@ -1,0 +1,13 @@
+package com.example.selenium;
+
+public class LoginExample {
+
+	public static void main(String args[])
+	
+	{
+		
+		System.setProperty("webdriver.gecko.driver", "D:\\Testing Material\\seleniumfiles\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+		
+	}
+	
+}

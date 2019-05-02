@@ -1,0 +1,9 @@
+package com.examples.java;
+
+public class Person {
+	
+	public Person(){
+		
+	}
+
+}

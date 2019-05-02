@@ -1,0 +1,20 @@
+package com.examples.java;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+
+		
+		Map map = new HashMap();
+		
+		map.put("IN", "India");
+		map.put("UK", "Unitred Kingdom");
+		map.put("USA", "United States of America");
+		map.put("FR", "France");
+		
+	}
+
+}

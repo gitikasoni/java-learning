@@ -1,0 +1,25 @@
+package com.examples.collection;
+
+import java.util.Map;
+
+public class LinkedHashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Map linkedHashMap = new LinkedHashMap<>();
+	   //LinkedHashMap<Integer,String> hm= new LinkedHashMap<Integer,String>();
+	
+		linkedHashMap.put("IN", "india");
+		linkedHashMap.put("SL", "Srilanka");
+		linkedHashMap.put("RF", "Roger Federer");
+		linkedHashMap.put("IN", "integer");
+		linkedHashMap.put("TL", "Tamil Nadu");
+		linkedHashMap.put("IN", "india");
+		linkedHashMap.put(1, "india");
+	System.out.println("HashMap values ... " +linkedHashMap);
+	
+	}
+
+}

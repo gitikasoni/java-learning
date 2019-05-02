@@ -1,0 +1,15 @@
+package com.examples.collection;
+
+import java.util.HashSet;
+
+public class SetGenericsExample {
+	
+	Set<String> set = new HashSet<String>();
+	
+	set.add("a");
+	set.add("b");
+	set.add("a");
+	set.add("b");
+	
+
+}

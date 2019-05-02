@@ -1,0 +1,17 @@
+Feature: Test the login functionality on sdet university 
+
+Scenario: the user should be able to login with correct username and correct password
+Given user is on the login page
+When  user enters correct username and correct password
+Then user gets confirmation
+
+Scenario Outline: The user should be able to login
+Given The user is on the login page 
+When user enters <username>
+And user enters <password>
+Then user gets confirmation
+
+Examples:
+| username | password |
+| tim@testemail.com | trpass |
+| rw@testmail.com | 

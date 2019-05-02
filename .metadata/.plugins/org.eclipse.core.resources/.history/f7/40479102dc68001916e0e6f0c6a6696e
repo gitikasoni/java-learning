@@ -1,0 +1,32 @@
+package com.example.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ByIdOrName;
+
+public class LoginExample {
+
+	public static void main(String args[])
+	
+	{
+		
+		System.setProperty("webdriver.gecko.driver", "D:\\Testing Material\\seleniumfiles\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("marionette", true);
+		
+		WebDriver driver = new FirefoxDriver(capabilities);
+		
+		driver.get("http://www.sdettraining.com/trguitransactions/AccountManagement.aspx");
+		
+		driver.findElement(By.id("MainContent_txtUserName")).sendKeys("time@testemail.com");
+		driver.findElement(By.id("MainContent_txtPassword")).sendKeys("trpass");
+		
+		driver.findElement(By.name("ctl00$MainContent$btnLogin")).click();
+		
+		String message = driver.findElement(By.id("conf_message")).getText();
+		System.out.println("Confirmation message " + message);
+	}
+	
+}

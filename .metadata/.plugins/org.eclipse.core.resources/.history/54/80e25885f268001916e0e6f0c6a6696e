@@ -1,0 +1,58 @@
+package com.example.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.Select;
+
+public class NewAccount {
+
+	public static void main(String[] args) {
+		
+		
+		String name = "Robin";
+		String email = "robin@example.com";
+		String password = "1234567";
+		String verifyPassword = "1234567";
+		String phoneNumber = "5677754323";
+		String gender = "Male";
+		String weeklyEmail;
+		String monthlyEmail;
+		String occasionalUpdates;
+		
+		
+				
+		System.setProperty(
+				"webdriver.gecko.driver",
+				"D:\\Testing Material\\seleniumfiles\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("marionette", true);
+
+		WebDriver driver = new FirefoxDriver(capabilities);
+
+		driver.get("http://www.sdettraining.com/trguitransactions/NewAccount.aspx");
+		driver.findElement(By.id("MainContent_txtFirstName")).sendKeys("Robin");
+		driver.findElement(By.name("ctl00$MainContent$txtEmail")).sendKeys(
+				"robin@example.com");
+		driver.findElement(By.id("MainContent_txtHomePhone")).sendKeys(
+				"547849954");
+		driver.findElement(By.id("MainContent_Male")).click();
+		driver.findElement(By.id("MainContent_txtPassword"))
+				.sendKeys("1234567");
+		driver.findElement(By.id("MainContent_txtVerifyPassword")).sendKeys(
+				"1234567");
+		Select dropdown = new Select(driver.findElement(By
+				.id("MainContent_menuCountry")));
+		dropdown.selectByVisibleText("Brazil");
+		// driver.findElement(By.cssSelector("input[id='MainContent_checkWeeklyEmail'][name='ctl00$MainContent$checkWeeklyEmail']")).click();
+		driver.findElement(By.id("MainContent_checkWeeklyEmail")).click();
+		driver.findElement(By.id("MainContent_btnSubmit")).click();
+
+		String message = driver.findElement(
+				By.id("MainContent_lblTransactionResult")).getText();
+		System.out.print("Registration confirmation message " + message);
+
+	}
+
+}

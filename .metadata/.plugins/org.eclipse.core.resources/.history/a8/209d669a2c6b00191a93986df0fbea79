@@ -1,0 +1,17 @@
+package com.examples.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Map<String> map = new HashMap<String>();
+		map.put("IN", "india");
+		
+
+	}
+
+}

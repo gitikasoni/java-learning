@@ -1,0 +1,27 @@
+package com.example.selenium;
+
+import java.util.List;
+
+public class DataReader {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	readCSV();
+	}
+
+	public static void readCSV()
+	{
+		String filename = "D:\\Testing Material\\TestCSV.csv";
+		List <String[]>records = utilities.CSV.get(filename);
+		for(String[] record : records)
+		{
+			for(String field : record)
+			{
+				System.out.println(field);
+			}
+		}
+		
+	
+		
+	}
+}

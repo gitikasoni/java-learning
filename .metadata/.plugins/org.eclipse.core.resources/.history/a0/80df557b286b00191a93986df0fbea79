@@ -1,0 +1,23 @@
+package com.examples.collection;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class SetGenericsExample {
+	
+	//unique + random order
+	HashSet<String> hash = new HashSet<String>();
+	
+	LinkedHashSet<String> set2 = new LinkedHashSet<String>();
+	
+	
+	hash.add("This");
+	hash.add("is");
+	hash.add("HashSet");
+	hash.add("example");
+	
+	sysout
+	
+
+}

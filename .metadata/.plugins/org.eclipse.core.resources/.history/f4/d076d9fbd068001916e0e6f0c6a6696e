@@ -1,0 +1,19 @@
+package com.example.selenium;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class FirefoxExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	System.setProperty("webdriver.gecko.driver", "D:\\Testing Material\\seleniumfiles\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+	DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+	capabilities.setCapability("marionette", true);
+	
+	
+		
+		
+	}
+
+}

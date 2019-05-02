@@ -1,0 +1,29 @@
+package com.examples.java;
+
+public class Employee {
+
+/*	private String name;
+	private String email;
+	private int age;
+	private double salary;
+	private int mobile;
+		
+*/	
+	
+	String name;
+	String email;
+	int age;
+	double salary;
+	int mobile;
+
+	
+	public static void main(String[] args) {
+		
+		
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

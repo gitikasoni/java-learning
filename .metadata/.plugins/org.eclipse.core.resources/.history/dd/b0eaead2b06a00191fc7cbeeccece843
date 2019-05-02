@@ -1,0 +1,42 @@
+package com.examples.java;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+
+		//key value pars + unique keys + random order
+		Map map = new HashMap();
+		
+		//key value pars + unique keys + insertion order
+		Map linkedHashMap = new LinkedHashMap<>();
+
+		//key value pars + unique keys + asc/desc order
+		Map treeMap = new TreeMap();
+		
+		map.put("IN", "India");
+		map.put("UK", "Unitred Kingdom");
+		map.put("USA", "United States of America");
+		map.put("FR", "France 1");
+		map.put("FR", "France 2");
+		map.put("FR", "Adarak");
+		map.put("UAE", "United Arab Emir");
+		map.put("Khichdi", "Dal");
+		
+		System.out.println("Printng Map : "+map);
+		System.out.println("Printng Map size: "+map.size());
+	
+		Set set = map.keySet();
+		
+		for(Object obj : set){
+			System.out.println("Printng Map elements key : "+obj + ", value :"+map.get(obj));
+					
+		}
+		
+	}
+
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginTestRunner" project="java-examples" tests="15" started="15" failures="0" errors="6" ignored="3">
+  <testsuite name="cucumberTests.LoginTestRunner" time="37.141">
+    <testsuite name="Feature: Test the login functionality on sdet university" time="37.141">
+      <testsuite name="Scenario: the user should be able to login with correct username and correct password" time="3.498">
+        <testcase name="Given user is on the login page" classname="Scenario: the user should be able to login with correct username and correct password" time="1.552"/>
+        <testcase name="When user enters correct username and correct password" classname="Scenario: the user should be able to login with correct username and correct password" time="0.041"/>
+        <testcase name="Then user gets confirmation" classname="Scenario: the user should be able to login with correct username and correct password" time="1.905"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: the user should be able to login" time="25.638">
+        <testsuite name="Examples:" time="25.638">
+          <testsuite name="| tim@testemail.com | trpass |" time="0.101" incomplete="true">
+            <error>java.lang.Error: Unresolved compilation problem: 
+	The method click_login() is undefined for the type BDDLoginTest
+&#13;
+	at stepImplementations.BDDLoginTest.user_enters_password(BDDLoginTest.java:55)&#13;
+	at ✽.And user enters password trpass](Login.feature:11)&#13;
+&#13;
+</error>
+            <testcase name="Given user is on the login page" classname="| tim@testemail.com | trpass |" time="0.101"/>
+            <testcase name="When user enters email tim@testemail.com" classname="| tim@testemail.com | trpass |" time="0.0"/>
+            <testcase name="And user enters password trpass]" classname="| tim@testemail.com | trpass |" time="0.0">
+              <error>java.lang.Error: Unresolved compilation problem: 
+	The method click_login() is undefined for the type BDDLoginTest
+&#13;
+	at stepImplementations.BDDLoginTest.user_enters_password(BDDLoginTest.java:55)&#13;
+	at ✽.And user enters password trpass](Login.feature:11)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="Then user gets confirmation" classname="| tim@testemail.com | trpass |" time="1.973" ignored="true"/>
+          </testsuite>
+          <testsuite name="| rw@testmail.com | rwpass |" time="0.062" incomplete="true">
+            <error>java.lang.Error: Unresolved compilation problem: 
+	The method click_login() is undefined for the type BDDLoginTest
+&#13;
+	at stepImplementations.BDDLoginTest.user_enters_password(BDDLoginTest.java:55)&#13;
+	at ✽.And user enters password rwpass](Login.feature:11)&#13;
+&#13;
+</error>
+            <testcase name="Given user is on the login page" classname="| rw@testmail.com | rwpass |" time="0.062"/>
+            <testcase name="When user enters email rw@testmail.com" classname="| rw@testmail.com | rwpass |" time="0.0"/>
+            <testcase name="And user enters password rwpass]" classname="| rw@testmail.com | rwpass |" time="0.0">
+              <error>java.lang.Error: Unresolved compilation problem: 
+	The method click_login() is undefined for the type BDDLoginTest
+&#13;
+	at stepImplementations.BDDLoginTest.user_enters_password(BDDLoginTest.java:55)&#13;
+	at ✽.And user enters password rwpass](Login.feature:11)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="Then user gets confirmation" classname="| rw@testmail.com | rwpass |" time="1.817" ignored="true"/>
+          </testsuite>
+          <testsuite name="| jv@testmail.com | jvpass |" time="0.091" incomplete="true">
+            <error>java.lang.Error: Unresolved compilation problem: 
+	The method click_login() is undefined for the type BDDLoginTest
+&#13;
+	at stepImplementations.BDDLoginTest.user_enters_password(BDDLoginTest.java:55)&#13;
+	at ✽.And user enters password jvpass](Login.feature:11)&#13;
+&#13;
+</error>
+            <testcase name="Given user is on the login page" classname="| jv@testmail.com | jvpass |" time="0.081"/>
+            <testcase name="When user enters email jv@testmail.com" classname="| jv@testmail.com | jvpass |" time="0.01"/>
+            <testcase name="And user enters password jvpass]" classname="| jv@testmail.com | jvpass |" time="0.0">
+              <error>java.lang.Error: Unresolved compilation problem: 
+	The method click_login() is undefined for the type BDDLoginTest
+&#13;
+	at stepImplementations.BDDLoginTest.user_enters_password(BDDLoginTest.java:55)&#13;
+	at ✽.And user enters password jvpass](Login.feature:11)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="Then user gets confirmation" classname="| jv@testmail.com | jvpass |" time="2.111" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

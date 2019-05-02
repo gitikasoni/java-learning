@@ -1,0 +1,28 @@
+package com.examples.collection;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetGenericsExample {
+	
+	//unique + random order
+	HashSet<String> hash = new HashSet<String>();
+	
+	LinkedHashSet<String> set2 = new LinkedHashSet<String>();
+	TreeSet<String> tree = new TreeSet<String>();
+	
+	hash.add("This");
+	hash.add("is");
+	hash.add("HashSet");
+	hash.add("example");
+	
+	System.out.print("HashSet Example -- Printing values " +hash);
+
+	for(String str : hash)
+	{
+		System.out.println("HashSet example using for each" +str);	}
+	
+
+}

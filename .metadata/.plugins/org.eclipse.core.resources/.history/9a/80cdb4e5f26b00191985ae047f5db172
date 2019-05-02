@@ -1,0 +1,7 @@
+Feature: Test the login functionality on sdet university 
+
+Scenario: The user should be able to login with correct email and password
+
+Given: The user is on login page
+When: The user enter correct email and password
+Then: user gets confirmation

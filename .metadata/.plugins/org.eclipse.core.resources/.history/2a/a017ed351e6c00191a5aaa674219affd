@@ -1,0 +1,19 @@
+package com.examples.java;
+
+public class JavaExceptionExample {
+
+	public static void main(String[] args) {
+		try{
+			System.out.println("Erw");
+			int data = 100/0;
+			System.out.println("Exception example");
+			
+		} catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+
+	}
+
+}

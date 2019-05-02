@@ -1,0 +1,18 @@
+package com.examples.collection;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetGenericsExample {
+	
+	Set<String> set1 = new HashSet<String>();
+	
+//	Set<String> set2 = new HashSet<String>();
+	set1.add("This");
+	set1.add("is");
+	set1.add("HashSet");
+	set1.add("example");
+	
+	
+
+}

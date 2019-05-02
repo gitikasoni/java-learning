@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginTestRunner" project="java-examples" tests="15" started="15" failures="0" errors="2" ignored="13">
+  <testsuite name="cucumberTests.LoginTestRunner" time="0.02">
+    <testsuite name="Feature: Test the login functionality on sdet university" time="0.02">
+      <testsuite name="Scenario: the user should be able to login with correct username and correct password" time="0.0" incomplete="true">
+        <error>cucumber.runtime.AmbiguousStepDefinitionsException: ✽.When user enters correct username and correct password(Login.feature:5) matches more than one step definition:
+  ^user enters (.*)$ in BDDLoginTest.user_enters_username(String)
+  ^user enters correct username and correct password$ in BDDLoginTest.user_enters_correct_username_and_correct_password()
+&#13;
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:71)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:267)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+        <testcase name="Given user is on the login page" classname="Scenario: the user should be able to login with correct username and correct password" time="0.0"/>
+        <testcase name="When user enters correct username and correct password" classname="Scenario: the user should be able to login with correct username and correct password" time="0.0">
+          <error>cucumber.runtime.AmbiguousStepDefinitionsException: ✽.When user enters correct username and correct password(Login.feature:5) matches more than one step definition:
+  ^user enters (.*)$ in BDDLoginTest.user_enters_username(String)
+  ^user enters correct username and correct password$ in BDDLoginTest.user_enters_correct_username_and_correct_password()
+&#13;
+	at cucumber.runtime.RuntimeGlue.stepDefinitionMatch(RuntimeGlue.java:71)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:267)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then user gets confirmation" classname="Scenario: the user should be able to login with correct username and correct password" time="0.01" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: The user should be able to login" time="0.01">
+        <testsuite name="Examples:" time="0.01">
+          <testsuite name="| tim@testemail.com | trpass |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given The user is on the login page" classname="| tim@testemail.com | trpass |" time="0.0" ignored="true"/>
+            <testcase name="When user enters tim@testemail.com" classname="| tim@testemail.com | trpass |" time="0.0" ignored="true"/>
+            <testcase name="And user enters trpass" classname="| tim@testemail.com | trpass |" time="0.0" ignored="true"/>
+            <testcase name="Then user gets confirmation" classname="| tim@testemail.com | trpass |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| rw@testmail.com | rwpass |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given The user is on the login page" classname="| rw@testmail.com | rwpass |" time="0.0" ignored="true"/>
+            <testcase name="When user enters rw@testmail.com" classname="| rw@testmail.com | rwpass |" time="0.0" ignored="true"/>
+            <testcase name="And user enters rwpass" classname="| rw@testmail.com | rwpass |" time="0.0" ignored="true"/>
+            <testcase name="Then user gets confirmation" classname="| rw@testmail.com | rwpass |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| jv@testmail.com | jvpass |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given The user is on the login page" classname="| jv@testmail.com | jvpass |" time="0.0" ignored="true"/>
+            <testcase name="When user enters jv@testmail.com" classname="| jv@testmail.com | jvpass |" time="0.0" ignored="true"/>
+            <testcase name="And user enters jvpass" classname="| jv@testmail.com | jvpass |" time="0.0" ignored="true"/>
+            <testcase name="Then user gets confirmation" classname="| jv@testmail.com | jvpass |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

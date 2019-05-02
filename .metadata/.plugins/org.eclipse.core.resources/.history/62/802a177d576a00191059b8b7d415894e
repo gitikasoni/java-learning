@@ -1,0 +1,17 @@
+package com.example.selenium;
+
+public class DataReader {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	readCSV();
+	}
+
+	public static void readCSV()
+	{
+		String filename = "D:\\Testing Material\\TestCSV.csv";
+		utilities.CSV.get(filename);
+
+		
+	}
+}

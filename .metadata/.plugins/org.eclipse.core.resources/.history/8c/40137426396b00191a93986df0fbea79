@@ -1,0 +1,29 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+
+	WebDriver driver;
+	
+	public void setUsername(){
+		
+	}
+	public void setPassword()
+	{
+		
+	}
+	
+	public void submit(WebDriver driver)
+	{
+		this.driver = driver;
+		
+	}
+	
+public LoginPage()
+{
+	}
+
+
+
+}

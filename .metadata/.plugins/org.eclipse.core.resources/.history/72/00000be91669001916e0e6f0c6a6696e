@@ -1,0 +1,25 @@
+package com.example.smoketest;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import utilities.DriverFactory;
+
+public class LoginPresentTestNG {
+
+	
+	@Test
+	public void loginElementPresentsTests()
+	{
+		
+		WebDriver driver = DriverFactory.open("firefox");
+		
+	driver.get("http://www.sdettraining.com/trguitransactions/AccountManagement.aspx");
+	boolean loginEmailBox = driver.findElement(By.id("MainContent_txtUserName")).isDisplayed();
+	boolean passwordBox = driver.findElement(By.id("MainContent_txtPassword")).isDisplayed();
+	}
+	
+	
+
+}

@@ -1,0 +1,62 @@
+package com.examples.java;
+
+public class Person {
+	String name;
+	int age;
+	double salary;
+
+	public Person() {
+		System.out.println("Inside person constructor");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public String toString() {
+		return "printing peson obj = name = " + this.name + ", age = "
+				+ this.age + ", salary = " + this.salary;
+	}
+
+	public static void main(String[] args) {
+
+		Person person = new Person();
+		Person person1 = new Person();
+		System.out.println("Person obj default : " + person);
+
+		person.name = "Manish";
+		person.age = 31;
+		person.salary = 100;
+		System.out.println("Person obj after set  : " + person);
+	
+		person1.setName("Gitika");
+		person1.setAge(25);
+		person1.setSalary(0);
+		System.out.println("Person1 obj after set  : " + person1);
+		
+		String name1 = person1.getName();	
+		System.out.println("Returned Person1 name =" + name1);
+	
+	}
+
+}

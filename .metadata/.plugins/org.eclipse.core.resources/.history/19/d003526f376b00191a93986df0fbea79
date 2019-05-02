@@ -1,0 +1,13 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+
+import utilities.DriverFactory;
+
+public class Login {
+	
+	WebDriver driver = DriverFactory.open("firefox");
+	driver.get("http://www.sdettraining.com/trguitransactions/AccountManagement.aspx");
+	
+
+}

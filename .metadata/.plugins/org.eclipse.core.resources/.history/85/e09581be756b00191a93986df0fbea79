@@ -1,0 +1,28 @@
+package com.examples.java;
+
+public class Person {
+	String name;
+	int age;
+	double salary;
+	
+	
+	
+	public Person(){
+		System.out.println("Inside person constructor");
+	}
+	
+	public String toString()
+	{
+	return "printing peson obj = name = " + this.name + ", age = " +this.age+ ", salary = " +this.salary;	
+	}
+	
+	public static void main(String[] args) {
+	Person person = new Person();
+	
+	System.out.println("Person obj : " +person);
+	
+	
+	
+	}
+
+}

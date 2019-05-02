@@ -1,0 +1,41 @@
+package tests;
+
+
+import java.util.List;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+import org.testng.annotations.Test;
+
+
+
+@RunWith(value = Parameterized.class)
+
+public class NewAccountDDT {
+	
+	String name;
+	String email;
+	String phone;
+	
+	
+	@Test
+	public void newAccountTest()
+	{
+		System.out.println("NEW RECORD: " + name + "" + email + "" + phone);
+	}
+	
+	@Parameters
+	public static List <String[]> getData()
+	{
+		return utilities.CSV.get("D:\\Testing Material\\TestCSV.csv");
+	}
+	
+	public NewAccountDDT(String name, String email, String phone, String gender, String password, String country, String weeklyEmail, String monthlyEmail, String occasionalEmail)
+	{
+	this.name = name;
+	this.email = email;
+	this.phone = phone;
+	}
+	
+}

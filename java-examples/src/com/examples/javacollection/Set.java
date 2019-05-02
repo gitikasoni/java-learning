@@ -1,0 +1,41 @@
+package com.examples.javacollection;
+
+import java.util.HashSet;
+
+
+
+
+
+public class Set {
+
+
+		public static void main(String args[]) {
+
+			//Set set = new HashSet();
+			
+			
+			
+			//Set sss = new HashSet();
+		
+			/*set.add(12);
+			set.add(52);
+			set.add(62);
+			set.add(45);
+			set.add(15);
+			set.add("Manish and Gitika");
+			set.add(3.7);
+			
+			System.out.println("printing set :"+set);
+			
+			
+			
+			for(Object obj : set){
+				System.out.println("printing set element :"+obj);
+				
+			}*/
+			
+	
+		}
+
+
+}

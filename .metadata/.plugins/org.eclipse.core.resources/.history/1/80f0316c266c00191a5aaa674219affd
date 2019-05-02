@@ -1,0 +1,17 @@
+package com.examples.java;
+
+public class ReadFile3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file = new File("C:\\Users\\pankaj\\Desktop\\test.txt"); 
+		  
+		  BufferedReader br = new BufferedReader(new FileReader(file)); 
+		  
+		  String st; 
+		  while ((st = br.readLine()) != null) 
+		    System.out.println(st); 
+
+	}
+
+}

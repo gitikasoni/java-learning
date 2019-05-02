@@ -1,0 +1,25 @@
+package com.example.selenium;
+
+import java.awt.SystemTray;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class RegistrationExample {
+
+	
+	public static void main(String args[])
+	
+	{
+		System.setProperty("webdriver.gecko.driver", "D:\\Testing Material\\seleniumfiles\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("marionette", true);
+
+		WebDriver driver = new FirefoxDriver(capabilities);
+		
+		driver.get("http://www.sdettraining.com/trguitransactions/AccountManagement.aspx");
+		driver.findElement(By.id(""))
+	
+
+}

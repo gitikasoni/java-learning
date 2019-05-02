@@ -1,0 +1,51 @@
+package tests;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import utilities.DriverFactory;
+
+public class Expedia {
+
+	WebDriver driver;
+	WebElement originElement;
+
+	@Test
+	public void hotelReservation() {
+
+		driver.findElement(By.id("tab-hotel-tab-hp")).click();
+		driver.findElement(By.id("hotel-destination-hp-hotel")).sendKeys(
+				"Chicago, IL");
+		driver.findElement(By.id("hotel-checkin-hp-hotel")).sendKeys(
+				"05/02/2019");
+		driver.findElement(By.id("hotel-checkout-hp-hotel")).sendKeys(
+				"05/10/2019");
+		WebElement element = driver.findElement(
+				By.xpath("/html/body/meso-native-marquee/section/div/div/div[1]/section/div/div[2]/div[2]/section[2]/form/div[4]/div[3]/div/ul/li/button"))
+				;
+		
+		System.out.println("");
+		driver.findElement(
+				By.className("uitk-step-input-input gcw-storeable gcw-update-feature-name gcw-traveler-selector-num-adults"))
+				//html.launch-view-home.siteid-1.storefront-web.firefox.js.flexbox.flexboxlegacy.canvas.webgl.no-touch.geolocation.hashchange.history.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.no-cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.localstorage.sessionstorage.svg.inlinesvg.pointerevents.mediaqueries.placeholder.formvalidation.details.datalistelem.json.no-win8touch.checkedselector.no-highres.no-ipad.no-iphone.no-ipod.no-android.no-appleios.positionfixed.datauri.launch-view body.wrap.cf.aoa-enabled.exp28390-1 meso-native-marquee section#WizardHero.hero-banner-wrap.wizard-hero.mercury.hero-no-title.background.d-col-ads.core-wizard-loaded.siteid-1.theme-inverse-hero div#hero-banner.hero-banner.background.native-marquee.expanded div.hero-banner-gradient.native-marquee div.cols-row.hero-banner-inner section#wizardSection div.hero-banner-box.siteId-1.cf.hideClassicDcol div#wizard-tabs.cols-row.theme-inverse-pills.wizard-tabs.cols-nested.inline-fields div.tabs-container.col section#section-package-tab-hp.tab-pane.on.cf.gcw-section-packages-tab form#gcw-packages-form-hp-package.gcw-form.gcw-childAgesAllProvided-travelerSelector.gcw-lessThanNTravelers-travelerSelector.gcw-isPartialDateWithinRange.gcw-isPartialCarDateWithinRange.flexible-shopping-form.ab29954TestStateOn.gcw-traveler-selector.field-border-in-high-contrast-mode.ess-passthrough-disabled section.package-form-fields div.cols-nested.package-room-data div.travel-selector-wrapper-slimwiz-package div#traveler-selector-hp-package.col.travel-selector-wrapper div.menu-bar.gcw-travel-selector-wrapper.traveler-selector-multi-rooms ul.menu-bar-inner li.open div.menu.sticky.gcw-menu div.menu-main div.traveler-selector-room-data.target-clone-field div.uitk-grid.step-input-outside.gcw-component.gcw-component-step-input.gcw-step-input.gcw-component-initialized div.uitk-col.all-col-shrink.uitk-step-input-value-wrapper.traveler-selector-traveler-field span.uitk-step-input-value
+				.sendKeys("4");
+		System.out.println("");
+
+	}
+
+	@Before
+	public void setup() {
+		driver = DriverFactory.open("firefox");
+		driver.get("https://www.expedia.com/");
+	}
+
+	@After
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

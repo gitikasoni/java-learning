@@ -1,0 +1,15 @@
+package com.examples.collection;
+
+import java.util.Map;
+
+public class LinkedHashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Map linkedHashMap = new LinkedHashMap<>();
+	   //LinkedHashMap<Integer,String> hm= new LinkedHashMap<Integer,String>();
+	}
+
+}
